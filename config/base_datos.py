@@ -17,8 +17,6 @@ def obtener_conexion():
 
     password = os.getenv("BD_PASSWORD", "")
 
-    password = os.getenv("BD_PASSWORD", "135421")
-    
     database = os.getenv("BD_NAME", "")
 
     # 2. Conexión mediante URI
