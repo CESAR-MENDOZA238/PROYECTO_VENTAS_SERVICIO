@@ -16,19 +16,7 @@
 
 -- DROP DATABASE IF EXISTS bd_ventas_servicio;
 
-CREATE DATABASE bd_ventas_servicio
-    WITH
-    OWNER = postgres
-    ENCODING = 'UTF8'
-    TEMPLATE = template0
-    -- En Windows puedes usar:
-    -- LC_COLLATE = 'Spanish_Peru.1252'
-    -- LC_CTYPE = 'Spanish_Peru.1252'
-    -- En Linux/Mac:
-    LC_COLLATE = 'C.UTF-8'
-    LC_CTYPE = 'C.UTF-8'
-    CONNECTION LIMIT = -1
-    IS_TEMPLATE = False;
+
 
 -- 2) Conéctate a bd_ventas_servicio antes de ejecutar lo siguiente
 -- (en psql: \c bd_ventas_servicio)
