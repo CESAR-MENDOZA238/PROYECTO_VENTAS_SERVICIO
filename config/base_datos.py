@@ -14,10 +14,10 @@ def obtener_conexion():
     user = os.getenv("BD_USER", "postgres")
 
     # IMPORTANTE: Coloca tu contraseña real en el archivo .env
-    password = os.getenv("BD_PASSWORD", "123456")
+    password = os.getenv("BD_PASSWORD", "")
 
     # Nombre de la base de datos creada a partir de BD_VENTAS_SERVICIO.sql
-    database = os.getenv("BD_NAME", "bd_ventas_servicio")
+    database = os.getenv("BD_NAME", "")
 
     # 2. Conexión mediante URI
     database_url = f"postgresql://{user}:{password}@{host}:{port}/{database}"
