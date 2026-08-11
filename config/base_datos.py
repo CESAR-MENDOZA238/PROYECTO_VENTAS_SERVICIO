@@ -14,13 +14,11 @@ def obtener_conexion():
     user = os.getenv("BD_USER", "postgres")
 
     # IMPORTANTE: Coloca tu contraseña real en el archivo .env
-<<<<<<< HEAD
-    password = os.getenv("BD_PASSWORD", "")
-=======
-    password = os.getenv("BD_PASSWORD", "135421")
->>>>>>> 07304c76500215f7b230ff48348533d9cbc1199b
 
-    # Nombre de la base de datos creada a partir de BD_VENTAS_SERVICIO.sql
+    password = os.getenv("BD_PASSWORD", "")
+
+    password = os.getenv("BD_PASSWORD", "135421")
+    
     database = os.getenv("BD_NAME", "")
 
     # 2. Conexión mediante URI
